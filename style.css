@@ -1,0 +1,27 @@
+
+
+#nav_top{
+    background-color: black;
+    margin-left: -8px;
+    margin-right: -8px;
+    text-align: center;  
+    position: relative;    
+}
+
+  body, html {
+    height: 100%;
+  }
+  
+
+  .bg {
+    /* The image used */
+    background-image: url('city.png');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
