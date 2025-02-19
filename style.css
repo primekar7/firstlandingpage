@@ -26,3 +26,12 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .container { 
+
+    grid-template-columns: auto; /* Two columns */ 
+    
+}   .container { 
+
+    grid-template-columns: auto; /* Two columns */ 
+    
+} 
