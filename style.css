@@ -1,14 +1,41 @@
 
 
 #nav_top{
-        background-color: black;
+    background-color: rgb(255, 255, 255);
     margin-left: -8px;
     margin-right: -8px;
     margin-top: -8px;
     text-align: center;  
-    position: relative;     
+    position: relative; 
 }
-
+#nav_soon{
+  /* bottom: 20%; */
+  
+  position: absolute;
+  animation: linear;
+  animation-name: run;
+  animation-duration: 20s;
+  font-size: x-large;
+  font-weight: bold;
+  color: rgb(239, 91, 12);
+  text-align: center;
+  animation-iteration-count:infinite;
+}
+@keyframes run {
+  0% {
+    left: 0%;
+    
+  }
+  50% { 
+    left: calc(100% - 10%); 
+   }
+  100% {
+    left: 0%;     
+  }
+  
+  
+}
+  
   body, html {
     height: 100%;
   }
@@ -16,14 +43,13 @@
 
   .bg {
     /* The image used */
-    background-image: url('city.png');
+    background-image: url('city1.jpg');
   
     /* Full height */
-    height: 100%; 
+    height: auto; 
   
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-
