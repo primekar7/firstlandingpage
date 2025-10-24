@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us — PrimeKar</title>
+    <link rel="icon" type="image/svg+xml" href="/primekarhalf.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .story-section {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .story-section p {
+            font-size: 1.2rem;
+            line-height: 2;
+            color: #555;
+            margin-bottom: calc(var(--spacing) * 3);
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: calc(var(--spacing) * 4);
+            margin-top: calc(var(--spacing) * 6);
+        }
+        .value-card {
+            background: var(--white);
+            padding: calc(var(--spacing) * 4);
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: calc(var(--spacing) * 2);
+        }
+        .value-card h3 {
+            color: var(--dark-green);
+            margin-bottom: calc(var(--spacing) * 2);
+        }
+        .value-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+        .stats-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: calc(var(--spacing) * 4);
+            margin-top: calc(var(--spacing) * 6);
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: calc(var(--spacing) * 1);
+        }
+        .stat-label {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <img src="/primekarhalf.jpg" style="width: 120px;display: flex; align-items: center; ">
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/services.html" class="nav-link">Services</a></li>
+                <!-- <li><a href="/fleet.html" class="nav-link">Fleet</a></li> -->
+                <!-- <li><a href="/corporate.html" class="nav-link">Corporate</a></li> -->
+                <li><a href="/about.html" class="nav-link active">About</a></li>
+                <li><a href="/contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header section-padding dark-section">
+            <div class="container">
+                <h1 class="section-title fade-in" style="color: var(--white);">About PrimeKar</h1>
+                <p class="section-subtitle fade-in-delay" style="color: rgba(255,255,255,0.9);">Calgary's trusted transportation service</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="story-section reveal">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>PrimeKar is Calgary's premier limousine service, designed for executives, VIPs, and luxury occasions. Founded with a vision to redefine premium transportation, we've built our reputation on reliability, discretion, and uncompromising quality.</p>
+                    <p>What sets us apart is our commitment to transparency and excellence. No hidden surprises, just world-class travel experiences. Every ride is an opportunity to exceed expectations, whether you're heading to an important meeting or celebrating life's special moments.</p>
+                    <p>Our team of professional chauffeurs undergoes rigorous training and background checks to ensure your safety and comfort. We don't just drive you to your destination—we deliver an experience that reflects the quality and professionalism you deserve.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding dark-section">
+            <div class="container">
+                <h2 class="section-title reveal" style="color: var(--white);">Our Values</h2>
+                <div class="values-grid">
+                    <div class="value-card reveal">
+                        <div class="value-icon">🎯</div>
+                        <h3>Excellence</h3>
+                        <p>We maintain the highest standards in every aspect of our service, from vehicle maintenance to customer care.</p>
+                    </div>
+                    <div class="value-card reveal">
+                        <div class="value-icon">🤝</div>
+                        <h3>Integrity</h3>
+                        <p>Transparent pricing, honest communication, and ethical business practices guide everything we do.</p>
+                    </div>
+                    <div class="value-card reveal">
+                        <div class="value-icon">💎</div>
+                        <h3>Luxury</h3>
+                        <p>Premium vehicles, professional chauffeurs, and attention to detail create unforgettable experiences.</p>
+                    </div>
+                    <div class="value-card reveal">
+                        <div class="value-icon">🔒</div>
+                        <h3>Discretion</h3>
+                        <p>Your privacy is paramount. We provide confidential, secure transportation for all our clients.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="section-padding dark-section" style="background: linear-gradient(135deg, var(--dark-green) 0%, #064032 100%);">
+            <div class="container">
+                <h2 class="section-title reveal" style="color: var(--white);">By The Numbers</h2>
+                <div class="stats-section">
+                    <div class="stat-item reveal">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Years of Service</div>
+                    </div>
+                    <div class="stat-item reveal">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item reveal">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Luxury Vehicles</div>
+                    </div>
+                    <div class="stat-item reveal">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">On-Time Rate</div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="story-section reveal">
+                    <h2 class="section-title">Why Choose PrimeKar?</h2>
+                    <p>In a city with many transportation options, PrimeKar stands out through our unwavering commitment to quality. We understand that luxury isn't just about the vehicle—it's about the entire experience.</p>
+                    <p>From the moment you book to the moment you arrive, every detail is carefully orchestrated. Our chauffeurs arrive early, vehicles are immaculate, and we go above and beyond to anticipate your needs.</p>
+                    <p>Whether you're a business executive who values punctuality, a couple celebrating an anniversary, or a visitor seeking the best Calgary has to offer, PrimeKar delivers an experience that exceeds expectations every time.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section section-padding">
+            <div class="container">
+                <div class="cta-content reveal">
+                    <h2>Experience The PrimeKar Difference</h2>
+                    <p>Join thousands of satisfied clients who trust us with their luxury transportation</p>
+                    <button class="cta-button shimmer">Download App</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>PrimeKar</h3>
+                <p>Calgary's premium limousine service</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/services.html">Services</a></li>
+                    <!-- <li><a href="/fleet.html">Fleet</a></li>
+                    <li><a href="/corporate.html">Corporate</a></li> -->
+                    <li><a href="/about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                    <li><a href="/terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:info@primekar.com">info@primekar.com</a></li>
+                    <li><a href="tel:+14035551234">+1 (403) 555-1234</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PrimeKar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/main.js"></script>
+</body>
+</html>

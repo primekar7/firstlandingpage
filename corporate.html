@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Accounts — PrimeKar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: calc(var(--spacing) * 4);
+            margin: calc(var(--spacing) * 6) 0;
+        }
+        .benefit-item {
+            background: var(--white);
+            padding: calc(var(--spacing) * 4);
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+        .benefit-item:hover {
+            transform: translateY(-5px);
+        }
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: calc(var(--spacing) * 2);
+        }
+        .benefit-item h3 {
+            color: var(--dark-green);
+            margin-bottom: calc(var(--spacing) * 2);
+            font-size: 1.3rem;
+        }
+        .benefit-item p {
+            color: #666;
+            line-height: 1.8;
+        }
+        .form-section {
+            background: var(--light-gray);
+            padding: calc(var(--spacing) * 8);
+            border-radius: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: calc(var(--spacing) * 3);
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: calc(var(--spacing) * 1);
+            color: var(--dark-green);
+            font-weight: 600;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: calc(var(--spacing) * 2);
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: var(--dark-green);
+            border: none;
+            padding: calc(var(--spacing) * 2.5) calc(var(--spacing) * 6);
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">PrimeKar</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/services.html" class="nav-link">Services</a></li>
+                <li><a href="/fleet.html" class="nav-link">Fleet</a></li>
+                <li><a href="/corporate.html" class="nav-link active">Corporate</a></li>
+                <li><a href="/about.html" class="nav-link">About</a></li>
+                <li><a href="/contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main style="padding-top: 80px;">
+        <section class="page-header section-padding dark-section">
+            <div class="container">
+                <h1 class="section-title fade-in" style="color: var(--white);">Corporate Accounts</h1>
+                <p class="section-subtitle fade-in-delay" style="color: rgba(255,255,255,0.9);">Premium transportation solutions for your business</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title reveal">Why Choose PrimeKar for Your Business</h2>
+                <p class="section-subtitle reveal">Streamlined transportation management with exclusive corporate benefits</p>
+
+                <div class="benefits-grid">
+                    <div class="benefit-item reveal">
+                        <div class="benefit-icon">📊</div>
+                        <h3>Simplified Billing</h3>
+                        <p>Monthly consolidated invoicing with detailed trip reports. Easy expense tracking and reconciliation for accounting departments.</p>
+                    </div>
+
+                    <div class="benefit-item reveal">
+                        <div class="benefit-icon">👤</div>
+                        <h3>Dedicated Account Manager</h3>
+                        <p>Your personal point of contact available 24/7 to handle all transportation needs and special requests.</p>
+                    </div>
+
+                    <div class="benefit-item reveal">
+                        <div class="benefit-icon">⚡</div>
+                        <h3>Priority Service</h3>
+                        <p>Skip the queue with guaranteed vehicle availability and priority dispatch for urgent requests.</p>
+                    </div>
+
+                    <div class="benefit-item reveal">
+                        <div class="benefit-icon">💰</div>
+                        <h3>Corporate Pricing</h3>
+                        <p>Exclusive volume-based discounts and negotiated rates tailored to your company's transportation needs.</p>
+                    </div>
+
+                    <div class="benefit-item reveal">
+                        <div class="benefit-icon">🔐</div>
+                        <h3>Enhanced Security</h3>
+                        <p>Background-checked chauffeurs, real-time tracking, and comprehensive insurance coverage for peace of mind.</p>
+                    </div>
+
+                    <div class="benefit-item reveal">
+                        <div class="benefit-icon">📱</div>
+                        <h3>Easy Booking Management</h3>
+                        <p>Centralized booking portal for managing multiple employees and locations. Approve riders and set spending limits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" style="background: var(--light-gray);">
+            <div class="container">
+                <h2 class="section-title reveal">Request Corporate Account Information</h2>
+                <p class="section-subtitle reveal">Fill out the form below and our team will contact you within 24 hours</p>
+
+                <div class="form-section reveal">
+                    <form id="corporateForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name *</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="employees">Estimated Monthly Trips</label>
+                            <input type="text" id="employees" name="employees" placeholder="e.g., 20-30 trips per month">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Information</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your transportation needs..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section section-padding">
+            <div class="container">
+                <div class="cta-content reveal">
+                    <h2>Join Leading Calgary Businesses</h2>
+                    <p>Experience the PrimeKar difference for your corporate transportation</p>
+                    <button class="cta-button shimmer">Get Started Today</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>PrimeKar</h3>
+                <p>Calgary's premium limousine service</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/fleet.html">Fleet</a></li>
+                    <li><a href="/corporate.html">Corporate</a></li>
+                    <li><a href="/about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                    <li><a href="/terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:info@primekar.com">info@primekar.com</a></li>
+                    <li><a href="tel:+14035551234">+1 (403) 555-1234</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PrimeKar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/main.js"></script>
+    <script>
+        document.getElementById('corporateForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your inquiry! Our corporate team will contact you within 24 hours.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>

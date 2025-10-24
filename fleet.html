@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet — PrimeKar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .fleet-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+        }
+        .fleet-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        .fleet-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, var(--dark-green), #064032);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+        .fleet-details {
+            padding: calc(var(--spacing) * 4);
+        }
+        .fleet-details h3 {
+            color: var(--dark-green);
+            font-size: 1.6rem;
+            margin-bottom: calc(var(--spacing) * 2);
+        }
+        .fleet-features {
+            list-style: none;
+            margin-top: calc(var(--spacing) * 2);
+        }
+        .fleet-features li {
+            padding: calc(var(--spacing) * 1) 0;
+            color: #666;
+            display: flex;
+            align-items: center;
+            gap: calc(var(--spacing) * 1);
+        }
+        .fleet-features li::before {
+            content: '✓';
+            color: var(--gold);
+            font-weight: bold;
+        }
+        .capacity-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: var(--dark-green);
+            padding: calc(var(--spacing) * 1) calc(var(--spacing) * 2);
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: calc(var(--spacing) * 2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">PrimeKar</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/services.html" class="nav-link">Services</a></li>
+                <li><a href="/fleet.html" class="nav-link active">Fleet</a></li>
+                <li><a href="/corporate.html" class="nav-link">Corporate</a></li>
+                <li><a href="/about.html" class="nav-link">About</a></li>
+                <li><a href="/contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main style="padding-top: 80px;">
+        <section class="page-header section-padding dark-section">
+            <div class="container">
+                <h1 class="section-title fade-in" style="color: var(--white);">Our Luxury Fleet</h1>
+                <p class="section-subtitle fade-in-delay" style="color: rgba(255,255,255,0.9);">Impeccably maintained vehicles for every occasion</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="fleet-card reveal">
+                        <div class="fleet-image">🚗</div>
+                        <div class="fleet-details">
+                            <span class="capacity-badge">Seats 3 Passengers</span>
+                            <h3>Executive Sedan</h3>
+                            <p>Premium sedans perfect for business travel and airport transfers. Features luxury leather seating and advanced climate control.</p>
+                            <ul class="fleet-features">
+                                <li>Mercedes-Benz S-Class or equivalent</li>
+                                <li>WiFi connectivity</li>
+                                <li>Phone charging ports</li>
+                                <li>Bottled water included</li>
+                                <li>Privacy partition available</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="fleet-card reveal">
+                        <div class="fleet-image">🚙</div>
+                        <div class="fleet-details">
+                            <span class="capacity-badge">Seats 6 Passengers</span>
+                            <h3>Luxury SUV</h3>
+                            <p>Spacious SUVs ideal for families and small groups. Extra luggage space and commanding road presence.</p>
+                            <ul class="fleet-features">
+                                <li>Cadillac Escalade or equivalent</li>
+                                <li>Premium sound system</li>
+                                <li>Ample luggage space</li>
+                                <li>Third-row seating</li>
+                                <li>All-weather capability</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="fleet-card reveal">
+                        <div class="fleet-image">🚐</div>
+                        <div class="fleet-details">
+                            <span class="capacity-badge">Seats 10 Passengers</span>
+                            <h3>Executive Sprinter</h3>
+                            <p>Premium sprinter van perfect for corporate groups and VIP transportation. Conference-style seating available.</p>
+                            <ul class="fleet-features">
+                                <li>Mercedes-Benz Sprinter</li>
+                                <li>Conference seating layout</li>
+                                <li>WiFi and entertainment system</li>
+                                <li>Large luggage capacity</li>
+                                <li>Privacy curtains</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="fleet-card reveal">
+                        <div class="fleet-image">🎩</div>
+                        <div class="fleet-details">
+                            <span class="capacity-badge">Seats 8 Passengers</span>
+                            <h3>Stretch Limousine</h3>
+                            <p>Classic luxury for weddings, proms, and special celebrations. The ultimate in elegant transportation.</p>
+                            <ul class="fleet-features">
+                                <li>Lincoln Town Car stretch</li>
+                                <li>Premium bar setup</li>
+                                <li>Fiber optic lighting</li>
+                                <li>Premium sound system</li>
+                                <li>Red carpet service</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="fleet-card reveal">
+                        <div class="fleet-image">🚌</div>
+                        <div class="fleet-details">
+                            <span class="capacity-badge">Seats 20 Passengers</span>
+                            <h3>Luxury Coach Bus</h3>
+                            <p>Full-size coach for large groups and corporate events. Perfect for conferences, tours, and team outings.</p>
+                            <ul class="fleet-features">
+                                <li>Premium motor coach</li>
+                                <li>Reclining leather seats</li>
+                                <li>Restroom facilities</li>
+                                <li>Entertainment system</li>
+                                <li>Climate controlled</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="fleet-card reveal">
+                        <div class="fleet-image">⭐</div>
+                        <div class="fleet-details">
+                            <span class="capacity-badge">Seats 4 Passengers</span>
+                            <h3>Ultra-Luxury Sedan</h3>
+                            <p>The pinnacle of luxury transportation. Reserved for our most discerning clients who demand perfection.</p>
+                            <ul class="fleet-features">
+                                <li>Rolls-Royce or Bentley</li>
+                                <li>Champagne service</li>
+                                <li>Bespoke amenities</li>
+                                <li>White-glove treatment</li>
+                                <li>Concierge service included</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section section-padding">
+            <div class="container">
+                <div class="cta-content reveal">
+                    <h2>Experience Luxury Transportation</h2>
+                    <p>Book your premium ride today through our mobile app</p>
+                    <button class="cta-button shimmer">Download App</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>PrimeKar</h3>
+                <p>Calgary's premium limousine service</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/fleet.html">Fleet</a></li>
+                    <li><a href="/corporate.html">Corporate</a></li>
+                    <li><a href="/about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                    <li><a href="/terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:info@primekar.com">info@primekar.com</a></li>
+                    <li><a href="tel:+14035551234">+1 (403) 555-1234</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PrimeKar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/main.js"></script>
+</body>
+</html>
