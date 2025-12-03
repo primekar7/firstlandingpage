@@ -213,7 +213,7 @@
                 <div class="cta-content reveal">
                     <h2 style="color: var(--white);">Prefer to Book Directly?</h2>
                     <p style="color: rgba(255,255,255,0.9);">Download our app for instant booking and exclusive offers</p>
-                    <button class="cta-button shimmer">Download App</button>
+                    <button class="cta-button shimmer" id="storeBtn">Download App</button>
                 </div>
             </div>
         </section>
@@ -255,6 +255,14 @@
     </footer>
 
     <script src="/main.js"></script>
+     <script>
+        document.getElementById('storeBtn').addEventListener('click', () => {
+          const appStore  = 'https://apps.apple.com/ca/app/primekar/id6753017125';      // iOS / macOS
+          const playStore = 'https://play.google.com/store/apps/details?id=com.primekar.customer&pcampaignid=web_share';    
+          const isApple = /iPad|iPhone|iPod|Mac/i.test(navigator.userAgent);
+          window.open(isApple ? appStore : playStore, '_blank');
+        });
+    </script>
     <script>
         document.getElementById('contactForm').addEventListener('submit', (e) => {
             e.preventDefault();
