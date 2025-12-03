@@ -165,16 +165,20 @@
     <div class="mobile-sticky-cta">
         <button class="cta-button" id="storeBtn">Download App</button>
     </div>
-    <script src="main.js">
+  <script>
         document.getElementById('storeBtn').addEventListener('click', () => {
           const appStore  = 'https://apps.apple.com/app/idYOUR_ID';      // iOS / macOS
-          const playStore = 'https://play.google.com/store/apps/details?id=your.package';
+          const playStore = 'https://play.google.com/store/apps/details?id=your.package';    
           const isApple = /iPad|iPhone|iPod|Mac/i.test(navigator.userAgent);
           window.open(isApple ? appStore : playStore, '_blank');
-});
+        });
+</script>
+    <script src="main.js">
+       
     </script>
 </body>
 </html>
+
 
 
 
