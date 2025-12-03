@@ -37,7 +37,7 @@
             <div class="hero-content">
                 <h1 class="hero-title fade-in">PrimeKar — Your Premium Ride. Always On Time.</h1>
                 <p class="hero-subtitle fade-in-delay">Luxury chauffeur service for airport transfers, executives, and special occasions.</p>
-                <button class="cta-button shimmer fade-in-delay-2" id="storeBtn">Download App</button>
+                <button class="cta-button shimmer fade-in-delay-2" id="storeBtn1">Download App</button>
                 <div class="app-badges fade-in-delay-3">
                     <a href="https://apps.apple.com/ca/app/primekar/id6753017125" class="app-badge">
                         <img src="AppStore1.png" alt="App Store" style="height: 50px;">
@@ -166,9 +166,13 @@
         <button class="cta-button" id="storeBtn">Download App</button>
     </div>
   <script>
+       const appStore  = 'https://apps.apple.com/ca/app/primekar/id6753017125';      // iOS / macOS
+        const playStore = 'https://play.google.com/store/apps/details?id=com.primekar.customer&pcampaignid=web_share';    
         document.getElementById('storeBtn').addEventListener('click', () => {
-          const appStore  = 'https://apps.apple.com/ca/app/primekar/id6753017125';      // iOS / macOS
-          const playStore = 'https://play.google.com/store/apps/details?id=com.primekar.customer&pcampaignid=web_share';    
+          const isApple = /iPad|iPhone|iPod|Mac/i.test(navigator.userAgent);
+          window.open(isApple ? appStore : playStore, '_blank');
+        });
+      document.getElementById('storeBtn1').addEventListener('click', () => { 
           const isApple = /iPad|iPhone|iPod|Mac/i.test(navigator.userAgent);
           window.open(isApple ? appStore : playStore, '_blank');
         });
@@ -178,6 +182,7 @@
     </script>
 </body>
 </html>
+
 
 
 
