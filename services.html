@@ -123,7 +123,7 @@
                 <div class="cta-content reveal">
                     <h2>Ready to Book Your Ride?</h2>
                     <p>Download our app for instant booking and exclusive offers</p>
-                    <button class="cta-button shimmer">Download App</button>
+                    <button class="cta-button shimmer" id="storeBtn">Download App</button>
                 </div>
             </div>
         </section>
@@ -163,7 +163,14 @@
             <p>&copy; 2025 PrimeKar. All rights reserved.</p>
         </div>
     </footer>
-
+  <script>
+        document.getElementById('storeBtn').addEventListener('click', () => {
+          const appStore  = 'https://apps.apple.com/ca/app/primekar/id6753017125';      // iOS / macOS
+          const playStore = 'https://play.google.com/store/apps/details?id=com.primekar.customer&pcampaignid=web_share';    
+          const isApple = /iPad|iPhone|iPod|Mac/i.test(navigator.userAgent);
+          window.open(isApple ? appStore : playStore, '_blank');
+        });
+    </script>
     <script src="/main.js"></script>
 </body>
 </html>
