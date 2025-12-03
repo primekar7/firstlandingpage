@@ -3,7 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
     initActiveNavLinks();
 });
+const appStore  = 'https://apps.apple.com/ca/app/primekar/id6753017125';      // iOS / macOS
+const playStore = 'https://play.google.com/store/apps/details?id=com.primekar.customer&pcampaignid=web_share';
 
+document.getElementById('storeBtn').addEventListener('click', () => {
+  const isApple = /iPad|iPhone|iPod|Mac/i.test(navigator.userAgent);
+  window.open(isApple ? appStore : playStore, '_blank');
+});
 
 function initMobileMenu() {
     const menuToggle = document.querySelector('.mobile-menu-toggle');
