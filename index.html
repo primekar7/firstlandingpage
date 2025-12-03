@@ -70,7 +70,7 @@
                     <div class="feature-card reveal">
                         <div class="feature-icon">🚗</div>
                         <h3>Premium Fleet</h3>
-                        <p>Luxury vehicles maintained to the highest standards</p>
+                        <p>Luxury vehicles are maintained to the highest standards</p>
                     </div>
                     <div class="feature-card reveal">
                         <div class="feature-icon">👔</div>
@@ -163,11 +163,20 @@
     </footer>
 
     <div class="mobile-sticky-cta">
-        <button class="cta-button">Download App</button>
+        <button class="cta-button" id="storeBtn">Download App</button>
     </div>
+<script>
+document.getElementById('storeBtn').addEventListener('click', () => {
+  const appStore  = 'https://apps.apple.com/ca/app/primekar/id6753017125';      // iOS / macOS
+  const playStore = 'https://play.google.com/store/apps/details?id=com.primekar.customer&pcampaignid=web_share';
 
+  const isApple = /iPad|iPhone|iPod|Mac/i.test(navigator.userAgent);
+  window.open(isApple ? appStore : playStore, '_blank');
+});
+</script>
     <script src="main.js"></script>
 </body>
 </html>
+
 
 
