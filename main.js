@@ -3,34 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
     initActiveNavLinks();
 });
-const appStore  = 'https://apps.apple.com/ca/app/primekar/id6753017125';      // iOS / macOS
-const playStore = 'https://play.google.com/store/apps/details?id=com.primekar.customer&pcampaignid=web_share';
-
-
-// 1.  Wait until the DOM is ready (paranoid mode)
-document.addEventListener('DOMContentLoaded', () => {
-
-  // 2.  Grab the button
-  const btn = document.getElementById('storeBtn');
-  if (!btn) {                       // basic sanity check
-    console.error('#getAppBtn not found');
-    return;
-  }
-
-  // 3.  Attach the click handler
-  btn.addEventListener('click', () => {
-    const isApple = /iPad|iPhone|iPod|Mac/i.test(navigator.userAgent);
-    const url = isApple
-      ? 'https://apps.apple.com/ca/app/primekar/id6753017125'   // <-- change only the ID
-      : 'https://play.google.com/store/apps/details?id=com.primekar.customer&pcampaignid=web_share'; // <-- change only the package
-
-    console.log('Opening:', url);   // helps debugging
-    window.open(url, '_blank');
-  });
-});
-
-
-
 function initMobileMenu() {
     const menuToggle = document.querySelector('.mobile-menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
